@@ -220,8 +220,10 @@
     <h2 class="permalink">
 
         {block:NewDayDate}
+
+		  <!-- Change date display to traditional format and remove leading zeroes. -->
           <a title="{NoteCountWithLabel}"
-            href="{Permalink}">{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}</a>
+            href="{Permalink}">{MonthNumber}/{DayOfMonth}/{Year}</a>
         {/block:NewDayDate}
 
         {block:IfNotDisqusShortName}
