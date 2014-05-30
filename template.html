@@ -112,7 +112,7 @@
       .text-post h3 {margin-bottom: 9pt;}
 
       .link-post {position: relative; top: -2pt;}
-	  <!--To-do: heading for link posts to italics.-->      
+	  <!--To-do: should formatting for link post title go here?-->      
       .link-post h3 {display: inline; padding-right:9pt;}
       .link-post a {color: {color:Text};}
       .link-post a:hover {color: {color:Secondary};}
@@ -259,7 +259,8 @@
 
     {block:Link}
     <div class="post-body link-post">
-      <h3><a class="link" href="{URL}">{Name}</a></h3>
+      <!-- Add an arrow to indicate link posts; make link posts italic. -->
+      <h3><a class="link" href="{URL}" style="font-style: italic">&rarr; {Name}</a></h3>
 
       {block:Description}
       {Description}
