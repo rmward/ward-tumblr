@@ -334,6 +334,15 @@
     </p>
     {/block:ContentSource}
 
+	<!-- Display post tags. -->
+	{block:HasTags}
+	<p>
+    	{block:Tags}
+        	<a href="{TagURL}">#{Tag}</a>
+		{/block:Tags}
+	</p>
+    {/block:HasTags}
+
     {block:Permalink}
 	<!-- Add infinity symbol with permalink. -->
 	<!-- To-do: Figure out color issue here. -->
